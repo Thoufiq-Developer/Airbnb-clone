@@ -1,0 +1,132 @@
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ebebeb;
+  z-index: 110;
+  animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+
+.sticky-nav .container {
+  padding: 0 40px;
+  max-width: 1126px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.sticky-nav-links {
+  display: flex;
+  height: 100%;
+}
+
+.sticky-nav-links a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222222;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.sticky-nav-links a:hover {
+  color: #000000;
+}
+
+.sticky-nav-links a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #222222;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.sticky-nav-price-info {
+  text-align: right;
+  line-height: 1.2;
+}
+
+.sticky-nav-price-info .price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222222;
+}
+
+.sticky-nav-price-info .price-line {
+  font-size: 14px;
+  color: #222222;
+}
+
+.sticky-nav-price-info .rating-line {
+  font-size: 12px;
+  font-weight: 600;
+  color: #222222;
+  margin-top: 2px;
+}
+
+.sticky-nav .reserve-btn {
+  background: linear-gradient(to right, #E61E4D 0%, #E31C5F 50%, #D70466 100%);
+  color: white;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.2s;
+}
+
+.sticky-nav .reserve-btn:hover {
+  opacity: 0.9;
+}
+
+/* ========================================= */
+/* Responsive Overrides                      */
+/* ========================================= */
+@media (max-width: 768px) {
+  .sticky-nav {
+    top: auto;
+    bottom: 0;
+    border-top: 1px solid #ebebeb;
+    border-bottom: none;
+    height: auto;
+    padding: 12px 0;
+    animation: slideUp 0.3s ease-out;
+  }
+  
+  .sticky-nav .container {
+    padding: 0 24px;
+    height: auto;
+  }
+  
+  .sticky-nav-links {
+    display: none;
+  }
+  
+  .sticky-nav-reserve {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .sticky-nav-price-info {
+    text-align: left;
+  }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}

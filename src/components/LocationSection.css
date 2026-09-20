@@ -1,0 +1,28 @@
+.location-subtitle {
+  font-size: 16px;
+  color: var(--text-dark);
+}
+
+.map-container {
+  width: 100%;
+}
+
+.exact-location-text {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.neighbourhood-highlights h3 {
+  font-size: 16px;
+}
+
+.neighbourhood-highlights p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.show-more-review {
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 16px;
+}

@@ -1,0 +1,172 @@
+.photo-tour-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--white);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.photo-tour-header {
+  height: 80px;
+  padding: 0 24px;
+  background-color: var(--white);
+  position: relative;
+  z-index: 10;
+}
+
+.back-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.back-btn:hover {
+  background-color: var(--bg-light);
+}
+
+.photo-tour-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0 24px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tour-thumbnails-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  padding-bottom: 24px;
+}
+
+/* Pseudo-element for 'Photo tour' title */
+.tour-thumbnails-wrapper::before {
+  content: 'Photo tour';
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.tour-thumbnails {
+  overflow-x: auto;
+  padding-bottom: 12px;
+  /* hide scrollbar */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.tour-thumbnails::-webkit-scrollbar {
+  display: none;
+}
+
+.thumb-item {
+  width: 120px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.thumb-item:hover {
+  opacity: 1;
+}
+
+.thumb-img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.thumb-title {
+  font-size: 14px;
+  color: var(--text-light);
+  line-height: 1.2;
+}
+
+.tour-sections {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.tour-category-section {
+  width: 100%;
+  gap: 40px;
+}
+
+.tour-category-info {
+  flex: 0 0 300px;
+  position: sticky;
+  top: 40px;
+  align-self: flex-start;
+}
+
+.tour-category-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.tour-category-desc {
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.tour-category-images {
+  flex: 1;
+}
+
+.masonry-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.masonry-item {
+  position: relative;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.masonry-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.masonry-item:hover::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.1);
+  pointer-events: none;
+}
+
+.masonry-item.full {
+  width: 100%;
+  height: 400px;
+}
+
+.masonry-item.half {
+  width: calc(50% - 6px);
+  height: 240px;
+}

@@ -1,0 +1,96 @@
+.promo-banner {
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.claim-btn {
+  border: 1px solid var(--border-color);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.reserve-card {
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.card-header .price {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.card-header .per-night {
+  font-size: 16px;
+  color: var(--text-dark);
+}
+
+.booking-inputs {
+  border: 1px solid var(--text-light);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dates-input {
+  border-bottom: 1px solid var(--text-light);
+}
+
+.check-in, .check-out {
+  flex: 1;
+  padding: 10px 12px;
+}
+
+.check-in {
+  border-right: 1px solid var(--text-light);
+}
+
+.booking-inputs label {
+  font-size: 10px;
+  font-weight: 800;
+  margin-bottom: 2px;
+}
+
+.booking-inputs span {
+  font-size: 14px;
+}
+
+.guests-input {
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.cancellation-info {
+  background-color: var(--bg-light);
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.reserve-btn {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  background-image: linear-gradient(to right, #E61E4D 0%, #E31C5F 50%, #D70466 100%);
+  transition: opacity 0.2s ease;
+}
+
+.reserve-btn:hover {
+  opacity: 0.9;
+}
+
+.charge-notice {
+  font-size: 14px;
+  color: var(--text-dark);
+}
+
+.report-listing button {
+  color: var(--text-light);
+}

@@ -1,0 +1,202 @@
+.property-title {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.property-stats {
+  font-size: 16px;
+  color: var(--text-dark);
+}
+
+.guest-favourite-badge {
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.badge-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.badge-subtitle {
+  font-size: 14px;
+  color: var(--text-light);
+  line-height: 1.2;
+  margin-top: 4px;
+}
+
+.badge-rating {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.rating-stars {
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.divider-vertical {
+  width: 1px;
+  height: 40px;
+  background-color: var(--border-color);
+}
+
+.badge-reviews .reviews-num {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.badge-reviews .reviews-text {
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.host-avatar-large {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.host-name {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.host-years {
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.feature-title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.feature-desc {
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.translation-badge {
+  background-color: var(--bg-light);
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.description-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.sleep-img {
+  width: 320px;
+  height: 213px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.sleep-title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.sleep-desc {
+  font-size: 14px;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.amenity-name {
+  font-size: 16px;
+}
+
+.show-all-amenities-btn {
+  border: 1px solid var(--text-dark);
+  padding: 13px 23px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.show-all-amenities-btn:hover {
+  background-color: var(--bg-light);
+}
+
+/* Calendar */
+.calendar-subtitle {
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  text-align: center;
+}
+
+.cal-day-header {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-light);
+  margin-bottom: 8px;
+}
+
+.cal-day {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 50%;
+}
+
+.selected-day {
+  background-color: var(--text-dark);
+  color: white;
+}
+
+.my-8 {
+  margin: 32px 0;
+  border: none;
+  border-top: 1px solid var(--border-color);
+}
+@media (max-width: 1024px) {
+  .guest-favourite-banner {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px;
+  }
+  .badge-right {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 768px) {
+  .amenities-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+@media (max-width: 768px) {
+  .calendar-placeholder {
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+}

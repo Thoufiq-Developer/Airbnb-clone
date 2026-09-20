@@ -1,0 +1,20 @@
+.listing-header {
+  margin-top: 24px;
+}
+
+.listing-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.action-btn {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.action-btn:hover {
+  background-color: var(--bg-light);
+}
