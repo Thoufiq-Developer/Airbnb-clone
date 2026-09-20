@@ -14,9 +14,9 @@
 .navbar-search {
   display: flex;
   align-items: center;
-  border: 1px solid var(--border-color);
+  border: 1px solid #dddddd;
   border-radius: 40px;
-  padding: 0 8px;
+  padding: 0 8px 0 0;
   box-shadow: 0 1px 2px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
   transition: box-shadow 0.2s ease;
   height: 48px;
@@ -30,25 +30,37 @@
   padding: 0 16px;
   font-weight: 500;
   font-size: 14px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #222222;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .search-add-guests {
-  color: var(--text-light);
+  color: #717171;
   font-weight: 400;
 }
 
 .divider {
   width: 1px;
   height: 24px;
-  background-color: var(--border-color);
+  background-color: #dddddd;
 }
 
 .search-icon-wrapper {
-  background-color: var(--primary-color);
+  background-color: #ff385c;
   border-radius: 50%;
-  padding: 10px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
-  margin-left: 8px;
+  margin-left: auto;
 }
 
 .navbar-user-menu {
@@ -61,36 +73,48 @@
   font-weight: 500;
   padding: 12px;
   border-radius: 24px;
+  color: #222222;
+  text-decoration: none;
 }
 
 .host-link:hover, .globe-btn:hover {
-  background-color: var(--bg-light);
+  background-color: #f7f7f7;
 }
 
 .globe-btn {
   padding: 12px;
   border-radius: 50%;
-  background-color: var(--bg-light);
+  background-color: #f7f7f7;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile-btn-circle {
   border-radius: 50%;
   padding: 12px;
   cursor: pointer;
-  background-color: var(--bg-light);
+  background-color: #f7f7f7;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: background-color 0.2s ease;
 }
 
 .profile-btn-circle:hover, .globe-btn:hover {
   background-color: #ebebeb;
 }
+
 @media (max-width: 768px) {
   .navbar-container {
     flex-direction: column;
     gap: 16px;
     padding: 12px 16px !important;
   }
-  .nav-search {
+  .navbar-search {
     width: 100%;
   }
 }
