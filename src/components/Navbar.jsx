@@ -53,7 +53,11 @@ const Navbar = () => {
         <div className="navbar-user-menu flex items-center gap-2">
           <a href="#" className="host-link" style={{padding: '12px'}}>Become a host</a>
           <button className="globe-btn flex items-center justify-center">
-             <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style={{display: 'block', height: '16px', width: '16px', fill: 'currentcolor'}}><path d="M8 .25a7.77 7.77 0 0 1 7.75 7.78 7.75 7.75 0 0 1-7.52 7.72h-.25A7.75 7.75 0 0 1 .25 8.24v-.25A7.75 7.75 0 0 1 8 .25zm1.95 8.5h-3.9c.15 2.9 1.17 5.34 1.88 5.5H8c.68 0 1.72-2.37 1.93-5.23zm4.26 0h-2.76c-.09 1.96-.53 3.78-1.18 5.08A6.26 6.26 0 0 0 14.17 8.75zm-9.67 0H1.8a6.26 6.26 0 0 0 2.76 5.08 12.6 12.6 0 0 1-1.14-5.08zm4.51-7c-.71.16-1.73 2.61-1.88 5.5h3.9c-.15-2.9-1.17-5.34-1.88-5.5zm4.46 1.92a12.6 12.6 0 0 1 1.14 5.08h2.76a6.26 6.26 0 0 0-2.76-5.08zM1.8 7.25h2.76a12.6 12.6 0 0 1 1.14-5.08A6.26 6.26 0 0 0 1.8 7.25z"></path></svg>
+             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style={{display: 'block', height: '16px', width: '16px', fill: 'none', stroke: 'currentColor', strokeWidth: '1.5', strokeLinecap: 'round', strokeLinejoin: 'round'}}>
+               <circle cx="12" cy="12" r="10"></circle>
+               <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+               <path d="M2 12h20"></path>
+             </svg>
           </button>
           <div className="profile-btn-circle flex items-center justify-center">
             <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style={{display: 'block', fill: 'none', height: '16px', width: '16px', stroke: 'currentcolor', strokeWidth: '3', overflow: 'visible'}}><g fill="none" fillRule="nonzero"><path d="m2 16h28"></path><path d="m2 24h28"></path><path d="m2 8h28"></path></g></svg>
