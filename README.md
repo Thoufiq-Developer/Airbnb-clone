@@ -1,9 +1,9 @@
-# Airbnb Property Page Clone
+# Playpower labs test project
 
-A pixel-perfect, fully responsive clone of the Airbnb property listing page, built from the ground up using **React**, **Vite**, and **Vanilla CSS**. This project focuses on exact UI matching, fluid responsive behavior across all devices, and an optimized component architecture.
+A pixel-perfect, fully responsive clone of the Airbnb frontend design, built from the ground up using **React**, **Vite**, and **Vanilla CSS**. This project focuses on exact UI matching, fluid responsive behavior across all devices, and an optimized component architecture.
 
 ## 🚀 Live Demo
-*(You can add your Vercel deployment link here after you deploy!)*
+*https://airbnb-clone-lovat-alpha.vercel.app/*
 
 ## ✨ Key Features
 - **Pixel-Perfect UI**: Exact replication of typography, spacing, SVG icons, and layouts used by Airbnb.
